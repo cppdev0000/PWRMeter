@@ -1,0 +1,155 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_PWRMETER            ICON                    "PWRMeter.ico"
+IDI_CHARGED             ICON                    "Charged.ico"
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_PWRMETER_DIALOG DIALOGEX 0, 0, 208, 185
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "PWRMeter setup"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Transparency",IDC_STATIC,18,12,45,8
+    CONTROL         "",IDC_TRANSPARENCY_SLD,"msctls_trackbar32",
+                    TBS_AUTOTICKS | WS_TABSTOP,12,24,186,24
+    LTEXT           "Height",IDC_STATIC,18,60,22,8
+    CONTROL         "",IDC_HEIGHT_SLD,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    WS_TABSTOP,12,72,186,24
+    LTEXT           "Critical level %",IDC_STATIC,18,108,48,8
+    CONTROL         "",IDC_CRITICALLEVEL_SLD,"msctls_trackbar32",
+                    TBS_AUTOTICKS | WS_TABSTOP,12,120,186,24
+    CONTROL         "Bar on bottom",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | 
+                    NOT WS_VISIBLE | WS_TABSTOP,12,168,61,10
+    DEFPUSHBUTTON   "Save",IDOK,102,162,42,14
+    PUSHBUTTON      "Cancel",IDCANCEL,156,162,42,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_PWRMETER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 201
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 178
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_POPUP MENU 
+BEGIN
+    POPUP "Menu"
+    BEGIN
+        MENUITEM "Adjust Power Properties",     ID_MENU_ADJUSTPOWERPROPERTIES
+
+        POPUP "Profiles"
+        BEGIN
+            MENUITEM "1",                           ID_PROFILES_1
+        END
+        MENUITEM "Configure",                   ID_MENU_CONFIGURE
+        MENUITEM "About",                       ID_MENU_ABOUT
+        MENUITEM "Exit",                        ID_MENU_EXIT
+    END
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_NOBATTERY           "No batteries were detected. Do you want to continue?"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
